@@ -1,3 +1,3 @@
-#  __a_k_j_prajapati__
+#  akjprajapati
 
 My repository for storing my scripts and other files.
