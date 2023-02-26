@@ -1,12 +1,10 @@
-#  ASHISH KUMAR
-
+# ASHISH KUMAR
+# B.Tech (2007-11) -- IIMT Engineering College, Meerut. UPTU Lucknow.
+ 
   Hi, I'm an IT professional since July 2011. I have worked at a number of companies gaining teamwork and leadership skills.
 
-  Hi, I'm a IT professional started my career in July 2011. I have worked at a number of companies gaining teamwork and leadership experience.
 
-  My Qualifications are: 
 
-  <mark>B.Tech (2007-11) -- IIMT Engineering College, Meerut. UPTU Lucknow.</mark>
 
   [Cerified Terraform Associate](https://www.credly.com/badges/63347904-ddc0-4b48-a51a-cc7da90fddf0/public_url)
   
