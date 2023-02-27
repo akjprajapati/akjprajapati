@@ -1,5 +1,5 @@
 # ASHISH KUMAR
-Hi, I'm an IT professional since July 2011. I have worked at a number of companies gaining teamwork and leadership skills.
+An IT professional since July 2011, worked at a number of companies gaining variety of technical experience, teamwork and leadership skills.
 
 
 # Qualifications:
