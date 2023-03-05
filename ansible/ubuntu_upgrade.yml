@@ -1,0 +1,82 @@
+---
+- name: Deploy to SCN-T-UBUNTU-UPGRADE server
+  gather_facts: yes
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Upgrade from Ubuntu_18.04 to Ubuntu_20.04 is starting, Please check /var/log/os-release-upgrade.log for more details.
+      lineinfile:
+        dest: /var/log/os-release-upgrade.log
+        line: '{{ ansible_date_time.iso8601 }} : OS upgrade from Ubuntu_{{ ansible_distribution_version }} to Ubuntu_20.04 started'
+        insertafter: EOF
+        
+    - name: copy releae upgrade config
+      copy:
+        src: release-upgrades
+        dest: /etc/update-manager/release-upgrades
+        force: yes
+        owner: root
+        group: root
+        mode: 0744
+
+    #Block OS upgrade to 20.04
+    - block:
+        - name: Update apt cache and run dist-upgrade
+          apt:
+            update_cache: yes
+            upgrade: dist
+            autoremove: yes
+            cache_valid_time: 3600
+            async: 3600
+          register: upgrade_to_focal
+
+        - name: Upgrade output.
+          lineinfile:
+            path: /var/log/os-release-upgrade.log
+            line: "upgrade_to_focal.stdout_lines"
+            insertafter: EOF
+
+        - name: Set PasswordAuthentication in sshd_config
+          lineinfile:
+            path: /etc/ssh/sshd_config
+            regexp: '^#?PasswordAuthentication'
+            line: 'PasswordAuthentication yes'
+            state: present
+            backup: yes
+          notify: Reload ssh service
+
+        - name: Reload ssh service
+          systemd:
+            name: ssh
+            state: reloaded
+
+        - name: Install required packaged after the upgrgade.
+          apt:
+            name:
+              - python-is-python3
+              - python3-psycopg2
+              - docker-compose-plugin
+            state: present
+
+        - name: log release upgrade msg
+          lineinfile:
+            dest: /var/log/os-release-upgrade.log
+            line: '{{ ansible_date_time.iso8601 }} : release upgrade to {{ ansible_distribution_version}} finished'
+            insertafter: EOF
+            
+        # - name: Reboot if upgrade was successful
+        #   reboot:
+        #     pre_reboot_delay: 5
+        #   when: upgrade_to_focal.changed
+
+      when: ansible_distribution_version == '18.04'
+      ignore_errors: yes
+
+
+    - name: Upgrade from Ubuntu_18.04 to Ubuntu_20.04 finished, Please check /var/log/os-release-upgrade.log for more details.
+      lineinfile:
+        dest: /var/log/os-release-upgrade.log
+        line: '{{ ansible_date_time.iso8601 }} : OS upgrade from Ubuntu_18.04 to Ubuntu_{{ ansible_distribution_version }} finished'
+        insertafter: EOF
+
