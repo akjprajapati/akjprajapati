@@ -1,1 +1,2 @@
 export ANSIBLE_HOST_KEY_CHECKING=false
+kube-cluster-setup
