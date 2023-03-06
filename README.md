@@ -25,13 +25,11 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 <p>
 
 #### Roles and responsibilities—
-
 ```
 ➢ Automating the infra provisioning using terraform for AWS, GCP and Azure cloud platforms.
 ➢ Automating tasks using ansible playbooks and bash / python scripts.
 ➢ Working on serverless projects which involve lambda and serverless framework.
 ```
-
 #### Projects—
 ```
 ➢ Modularization of the terraform code.
