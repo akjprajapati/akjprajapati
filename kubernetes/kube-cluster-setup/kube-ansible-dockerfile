@@ -14,7 +14,7 @@ SHELL ["/bin/bash", "-c"]
 RUN echo "PS1='\u@\h:\w\$ '" >> ~/.bashrc
 
 RUN sudo ln -fs /usr/share/zoneinfo/UTC /etc/localtime
-RUN sudo apt update && sudo apt install python3-pip ansible vim curl git sshpass iputils-ping python-is-python3 iproute2 net-tools -y
+RUN sudo apt update && sudo apt install python3-pip vim curl git sshpass iputils-ping python-is-python3 iproute2 net-tools ansible -y
 RUN sudo apt autoremove && sudo apt autoclean
 
 COPY README.md inventory *.yml /home/ansible/kube-cluster-setup/

@@ -9,3 +9,15 @@ An IT professional since July 2011, worked at a number of companies gaining vari
   
 # SKILLS
 Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kubernetes, MySQL, Postgresql, Snyk, OWASP ZAP.
+
+# Work Experience.
+| Role  | Employer | Tenure |
+| ------------- | ------------- | ------------- |
+| Lead DevOps  | Kloud9 Technologies  | Feb 2022 - Oct 2022 |
+| Sr. DevOps Engr.  | YugabyteDB  | Mar 2021 - Nov 2021 |
+| Site Reliability Engr. | VMware | Jul 2020 - Mar 2021 |
+| Technical Lead | EiNFOCHIPS | Feb 2018 - Jan 2020 |
+| Linux Admin | Rave Technologies | July 2016 - Jan 2018 |
+| Sr. Executive - Infra  | ControlCase | Feb 2014  - Jul 2016 |
+| Project Engineer | CDAC | Jul 2011 - Feb 2014 |
+
