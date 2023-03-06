@@ -21,3 +21,14 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 | Sr. Executive - Infra  | ControlCase | Feb 2014  - Jul 2016 |
 | Project Engineer | CDAC | Jul 2011 - Feb 2014 |
 
+<details><summary> | Lead DevOps  | Kloud9 Technologies  | Feb 2022 - Oct 2022 | </summary>
+<p>
+
+#### We can hide anything, even code!
+
+```ruby
+   puts "Hello World"
+```
+
+</p>
+</details>
