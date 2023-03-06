@@ -21,13 +21,20 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 | Sr. Executive - Infra  | ControlCase | Feb 2014  - Jul 2016 |
 | Project Engineer | CDAC | Jul 2011 - Feb 2014 |
 
-<details><summary> | Lead DevOps  | Kloud9 Technologies  | Feb 2022 - Oct 2022 | </summary>
+<details><summary> Lead DevOps -- Kloud9 Technologies  --  Feb 2022 - Oct 2022 </summary>
 <p>
 
 #### We can hide anything, even code!
 
-```ruby
-   puts "Hello World"
+```
+Roles and responsibilities—
+➢ Automating the infra provisioning using terraform for AWS, GCP and Azure cloud platforms.
+➢ Automating tasks using ansible playbooks and bash / python scripts.
+➢ Working on serverless projects which involve lambda and serverless framework.
+Projects—
+➢ Modularization of the terraform code.
+➢ Implementation of terraform for Kubernetes resource creation on cloud platforms.
+➢ Implementation of packer and ansible provisioner with terraform.
 ```
 
 </p>
