@@ -12,7 +12,7 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 
 # Work Experience.
 
-<details><summary> `Lead DevOps` -- `Kloud9 Technologies`  --  `Feb 2022 - Oct 2022` </summary>
+<details><summary> `Lead DevOps -- Kloud9 Technologies  --  Feb 2022 - Oct 2022` </summary>
 <p>
 
 #### Roles and responsibilities—
