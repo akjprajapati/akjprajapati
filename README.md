@@ -12,7 +12,7 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 
 # Work Experience.
 
-<details><summary> `Lead DevOps -- Kloud9 Technologies  --  Feb 2022 - Oct 2022` </summary>
+<details><summary> Lead DevOps -- Kloud9 Technologies  --  Feb 2022 - Oct 2022 </summary>
 <p>
 
 #### Roles and responsibilities—
@@ -30,7 +30,7 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 </p>
 </details>
 
-<details><summary> `Sr. Tech Support Engineer` -- `Yugabyte Software India Pvt. Ltd.`  --  `Mar 2021 - Nov 2021`  </summary>
+<details><summary> Sr. Tech Support Engineer -- Yugabyte Software India Pvt. Ltd.  --  Mar 2021 - Nov 2021  </summary>
 <p>
 
 #### Roles and responsibilities—
@@ -43,7 +43,7 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 </p>
 </details>
 
-<details><summary> `Site Reliability Engineer` -- `VMware Software India Pvt. Ltd.` --  `Jul 2020 - Mar 2021` </summary>
+<details><summary> Site Reliability Engineer -- VMware Software India Pvt. Ltd. --  Jul 2020 - Mar 2021 </summary>
 <p>
 
 #### Projects (Individual Contributor role.)
@@ -56,7 +56,7 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 </p>
 </details>
 
-<details><summary> `Technical Lead` -- `EiNFOCHIPS` -- `Feb 2018 - Jan 2020` </summary>
+<details><summary> Technical Lead -- EiNFOCHIPS -- Feb 2018 - Jan 2020 </summary>
 <p>
 
 #### Roles and responsibilities—
@@ -84,7 +84,7 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 </p>
 </details>
 
-<details><summary> `Linux Admin` --  `Rave Technologies` -- `July 2016 - Jan 2018` </summary>
+<details><summary> Linux Admin -- Rave Technologies -- July 2016 - Jan 2018 </summary>
 <p>
 
 #### Roles and responsibilities—
@@ -107,7 +107,7 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 </p>
 </details>
 
-<details><summary> `Sr. Executive - Infra` -- `ControlCase` -- `Feb 2014  - Jul 2016` </summary>
+<details><summary> Sr. Executive - Infra -- ControlCase -- Feb 2014  - Jul 2016 </summary>
 <p>
 
 #### Roles and responsibilities—
@@ -132,7 +132,7 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 </p>
 </details>
 
-<details><summary> `Project Engineer` -- `CDAC` -- `Jul 2011 - Feb 2014` </summary>
+<details><summary> Project Engineer -- CDAC -- Jul 2011 - Feb 2014 </summary>
 <p>
 
 #### Roles and responsibilities—
