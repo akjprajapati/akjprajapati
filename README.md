@@ -24,18 +24,19 @@ Linux, AWS, GCP, Azure, Bash, Python, Terraform, Ansible, Jenkins, Docker, Kuber
 <details><summary> Lead DevOps -- Kloud9 Technologies  --  Feb 2022 - Oct 2022 </summary>
 <p>
 
-#### We can hide anything, even code!
+#### Roles and responsibilities—
 
 ```
-Roles and responsibilities—
 ➢ Automating the infra provisioning using terraform for AWS, GCP and Azure cloud platforms.
 ➢ Automating tasks using ansible playbooks and bash / python scripts.
 ➢ Working on serverless projects which involve lambda and serverless framework.
-Projects—
+```
+
+#### Projects—
+```
 ➢ Modularization of the terraform code.
 ➢ Implementation of terraform for Kubernetes resource creation on cloud platforms.
 ➢ Implementation of packer and ansible provisioner with terraform.
 ```
-
 </p>
 </details>
