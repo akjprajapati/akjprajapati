@@ -3,5 +3,4 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && apt install ansible vim curl git sshpass iputils-ping python-is-python3 -y
-
-COPY ../kubernetes 
+ 

@@ -2,9 +2,19 @@ FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && apt install sudo ansible vim curl git sshpass iputils-ping python-is-python3 -y
+RUN apt update && apt install sudo -y
 
---disabled-password
+RUN useradd -m -s /bin/bash ansible && \
+    echo 'myuser:!!:0:0:myuser:/home/myuser:/bin/bash' >> /etc/passwd && \
+    echo 'ansible ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers.d/ansible-user && \
+    usermod -aG sudo ansible
+
+USER ansible
+SHELL ["/bin/bash", "-c"]
+RUN echo "PS1='\u@\h:\w\$ '" >> ~/.bashrc
+
+RUN sudo ln -fs /usr/share/zoneinfo/UTC /etc/localtime
+RUN sudo apt update && sudo apt install python3-pip ansible vim curl git sshpass iputils-ping python-is-python3 -y
+RUN sudo apt autoremove && sudo apt autoclean
 
 COPY README.md inventory *.yml /home/ansible/kube-cluster-setup/
-
