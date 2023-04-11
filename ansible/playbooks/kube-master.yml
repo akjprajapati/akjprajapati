@@ -1,0 +1,75 @@
+---
+- name: Install Kubernetes master
+  hosts: kube-master
+  become: true
+  vars:
+    k8s_version: "1.26.3-00"
+    pod_network_cidr: "192.168.0.0/16"
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Add user to Docker group
+      user:
+        name: "{{ ansible_user }}"
+        groups: docker
+        append: yes
+
+    - name: Add Kubernetes apt key
+      apt_key:
+        url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+        state: present
+
+    - name: Add Kubernetes apt repository
+      apt_repository:
+        repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
+        state: present
+
+    - name: Install Kubernetes components
+      apt:
+        name:
+          - kubelet={{ k8s_version }}
+          - kubeadm={{ k8s_version }}
+          - kubectl={{ k8s_version }}
+        state: present
+
+    - name: Initialize Kubernetes cluster
+      command: kubeadm init --pod-network-cidr={{ pod_network_cidr }}
+      register: kubeadm_output
+
+    - name: Create directory
+      file:
+        path: "/home/{{ ansible_user }}/.kube"
+        state: directory
+
+    - name: Copy Kubernetes admin config
+      copy:
+        content: "{{ kubeadm_output.stdout_lines[-1] }}"
+        dest: "/home/{{ ansible_user }}/.kube/config"
+        owner: "{{ ansible_user }}"
+        mode: "0600"
+
+    - name: Copy Kubernetes admin config for root
+      copy:
+        content: "{{ kubeadm_output.stdout_lines[-1] }}"
+        dest: "/root/.kube/config"
+        owner: root
+        mode: "0600"
+
+    - name: Install Flannel network overlay
+      become_user: "{{ ansible_user }}"
+      command: "kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml"
+
+    - name: Set kubectl context
+      become_user: "{{ ansible_user }}"
+      command: "kubectl config use-context kubernetes-admin@kubernetes"
+
+    - name: Print join command
+      debug:
+        msg: "To join worker nodes, run: {{ kubeadm_output.stdout_lines[-2] }}"
