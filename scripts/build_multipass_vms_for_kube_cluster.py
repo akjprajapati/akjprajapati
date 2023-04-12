@@ -23,9 +23,6 @@ for vm_name in vm_names:
         else:
             print(f"Failed to launch virtual machine '{vm_name}'.")
 
-
-
-
 # Enable password authentication in ssh config.
 
 # Iterate over the list of VM names and execute the command on each of them
