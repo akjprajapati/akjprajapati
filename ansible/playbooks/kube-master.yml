@@ -14,7 +14,7 @@
       apt:
         name: docker.io
         state: present
-
+ 
     - name: Add user to Docker group
       user:
         name: "{{ ansible_user }}"
@@ -73,3 +73,5 @@
     - name: Print join command
       debug:
         msg: "To join worker nodes, run: {{ kubeadm_output.stdout_lines[-2] }}"
+
+...
