@@ -2,7 +2,7 @@
 
 ## 🚀 A Seasoned DevOps, CloudOps & Platform Engineer - Since 2011
 
-A linux lover and results-driven technocrate focused on building resilient & secure infrastructures across cloud platforms ( AWS / Azure /GCP ). Experienced in designing production-ready environments with strong understanding of DevOps and security practices. Currently exploring AI/ML and blockchain to expand into emerging technologies.
+A linux lover and results-driven technocrate focused on building resilient & secure infrastructures across cloud platforms ( AWS / Azure / GCP ). Experienced in designing production-ready environments with strong understanding of DevOps and security practices. Currently exploring AI/ML and blockchain to expand into emerging technologies.
 
 ### 📧 Contact
 - **Email:** akjprajapati@outlook.com
@@ -20,7 +20,7 @@ A linux lover and results-driven technocrate focused on building resilient & sec
 - **Monitoring & Observability** - Prometheus, Grafana, ELK Stack
 
 ### 🌟 Key Achievements: 
-- **15+ Years** of hands-on experience in DevOps and Cloud Operations
+- **15+ Years** of hands-on experience as DevOps, CloudOps and Platform Engineer.
 - **11000+** cloud resources managed using automation tools
 - **Multi-cloud expertise** across AWS, GCP, and Azure platforms
 - **Team Leadership** experience managing a team of 16+ engineers
